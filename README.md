@@ -14,11 +14,15 @@ Ce projet est une **simulation de phishing** de la page de connexion de Facebook
 - Serveur local (**XAMPP, WAMP, LAMP, MAMP**)
 - Composer (optionnel pour PHPMailer)
 
+---
+
 ### 2️⃣ **Cloner le dépôt**
 ```bash
 git clone https://github.com/Ltk-Mxz/fish.git
 cd fish
 ```
+
+---
 
 ### 3️⃣ **Configuration de la base de données**
 1. **Créer la base de données** dans MySQL :
@@ -35,6 +39,8 @@ CREATE TABLE target (
 );
 ```
 
+---
+
 ### 4️⃣ **Configurer les paramètres du projet**
 Configure les paramètres suivants:
 ```php
@@ -47,6 +53,8 @@ define('EMAIL_TO', 'ton_email@email.com'); // Email pour recevoir les logs
 define('EMAIL_FROM', 'ton_email@gmail.com');
 define('EMAIL_PASS', 'ton_mot_de_passe');
 ```
+
+---
 
 ### 5️⃣ **Installation de PHPMailer**
 Si tu l’as téléchargé manuellement, assure-toi que le dossier `PHPMailer/` contient bien :
@@ -79,7 +87,6 @@ php -S localhost:8000
 
 ## 🔧 Dépannage
 **Problème d’envoi d’e-mail ?**
-  ```
 - Active l’accès pour **les applications moins sécurisées** sur Gmail :
   [Créer un mot de passe d'application](https://myaccount.google.com/apppasswords)
 
@@ -90,7 +97,6 @@ php -S localhost:8000
 Toute utilisation illégale engage la responsabilité de l'utilisateur.
 
 ---
-
 ## 📜 Licence
 MIT License - Tu peux utiliser ce projet librement en respectant les lois en vigueur.
 
